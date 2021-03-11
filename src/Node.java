@@ -20,7 +20,7 @@ public class Node<E> {
     }
 
     /**
-     * 从头节点开始输入整个链表
+     * 从头节点开始输入整个链表,先找到头节点，当一个节点的prev为空的时候即为头节点
      **/
     public void showAll() {
         Node firstNode = this.getFirstNode();
@@ -33,6 +33,8 @@ public class Node<E> {
 
 
     /**
+     * 在当前节点的后面插入一个新的节点，将要插入节点的prev指向当前节点，将要插入节点的next指向当前节点的next
+     *
      * @param insertNode 要插入的值
      * @return 返回插入是否成功
      */
